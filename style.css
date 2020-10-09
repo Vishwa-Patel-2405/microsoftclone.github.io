@@ -1,0 +1,411 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    background: #fff;
+    color: #000;
+    line-height: 1.5;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #262626;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    max-width: 1100px;
+}
+
+
+/* Navbar */
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row ;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.main-nav ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-nav .logo{
+    width: 110px;
+}
+
+
+.main-nav ul.main-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+.main-nav ul li a{
+    padding-bottom: 3px;
+}
+
+.main-nav ul li a:hover{
+    border-bottom: 2px solid #262626;
+}
+
+.main-nav ul li{
+    padding: 0 10px;
+}
+
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+
+.btn{
+    cursor: pointer;
+    font-weight:lighter;
+    border: 0;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #262626;
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+/* Showcase */
+
+.showcase{
+    width: 100%;
+    height: 400px;
+    background: url('img/showcase.jpg') center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+.showcase h2, .showcase p{
+    padding-bottom: 10px;
+}
+
+.showcase .btn{
+    margin-top: 20px;
+}
+
+
+/* Home Cards  */
+
+.home-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.home-cards img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.home-cards h3{
+    margin-bottom: 5px;
+}
+
+.home-cards p{
+    margin-bottom: 5px;
+}
+
+.home-cards a{
+    display: inline-block;
+    color: #0067ba;
+    font-weight: 600;
+}
+
+.home-cards a:hover{
+    text-decoration: underline;
+}
+
+.home-cards a:hover i{
+    margin-left: 4px;
+    transition: 0.2s ease;
+}
+
+
+/* Microsoft Edge */
+
+
+.edge{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:url('img/edge.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.edge .edge-content{
+    width: 100%;
+}
+
+.edge .edge-content h2,p,a{
+    margin-bottom: 10px;
+}
+
+.edge-content a{
+    background: #000;
+    padding: 10px 20px;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.edge-content a:hover{
+    text-decoration: underline;
+}
+
+.edge-content a:hover i{
+    margin-left: 4px;
+    transition: 0.3s ease;
+}
+
+
+/* For Work */
+
+.for-work{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.for-work img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.for-work img:hover{
+    opacity: 90%;
+}
+
+.for-work h3{
+    margin-bottom: 10px;
+}
+
+.for-work p{
+    margin-bottom: 10px;
+}
+
+.for-work a{
+    display: inline-block;
+    color: #0067ba;
+    font-weight: 600;
+}
+
+.for-work a:hover{
+    text-decoration: underline;
+}
+
+.for-work a:hover i{
+    margin-left: 4px;
+    transition: 0.2s ease;
+}
+
+
+/* Social Media */
+
+.social-media{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.social-media .social-left{
+    padding-bottom: 6px;
+}
+
+.social-media .social-right img{
+    width: 27px;
+    height: 27px;
+}
+
+.social-media .social-right{
+    margin-right: 78%;
+}
+
+.social-media .social-right a{
+    margin-right: 7px;
+}
+
+
+/* Footer */
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 100px;
+}
+
+.footer-ul p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #545454;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+
+.footer ul li{
+    font-size: 12px;
+    margin-bottom: 17px;
+}
+
+.footer ul li:hover{
+    color: #262626;
+    text-decoration: underline;
+}
+
+
+/* Copyright */
+
+.copyright{
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.copyright .copyright-ul ul{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-column-gap: .6rem;
+    padding: 0 15px 0 0;
+}
+
+.copyright .copyright-ul ul a{
+    font-size: 12px;
+    color: #262626;
+}
+
+.copyright .copyright-ul ul a:hover{
+    text-decoration: underline;
+}
+
+.copyright .copyright-ul ul p{
+    font-size: 12px;
+}
+
+.copyright .copyright-ul ul .copy-ul{
+    margin-right: 50px;
+}
+
+
+/* Responsive */
+
+@media(max-width:700px){
+
+    .menu-btn{
+        display: block;
+    }
+
+    .menu-btn:hover{
+        opacity: .6;
+    }
+
+    .main-nav ul.main-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        opacity: 0.9;
+        padding: 30px;
+        border-right: 1px solid #ccc;
+        transform: translateX(-20px);
+    }
+
+    .home-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .for-work{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .social-media .social-right{
+        margin-right: 60%;
+    }
+
+    .footer{
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 100px;
+        grid-row-gap: 50px;
+    }
+
+    .copyright .copyright-ul ul{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-column-gap: .6rem;
+        padding: 0 15px 0 0;
+    }
+}
+
+@media(max-width:500px){
+    
+    .showcase{
+        height: 250px;
+    }
+
+    .home-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .edge{
+        height: 200px;
+    }
+
+    .edge-content p{
+        display: none;
+    }
+
+    .for-work{
+        grid-template-columns: 1fr;
+    }
+
+    .social-media .social-right{
+        margin-right: 45%;
+    }
+
+    .footer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
